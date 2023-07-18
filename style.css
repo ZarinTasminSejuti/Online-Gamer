@@ -1,0 +1,63 @@
+/* work sans font from google font */
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700&display=swap');
+
+/* shared styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    border: none;
+}
+.banner-container {
+    max-width: 1440px;
+    /* min-height: 100px; */
+    background-color: rgb(246, 235, 252);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px auto;
+    padding: 20px 40px 0px 40px;
+}
+
+
+.banner-content {
+    width: 50%;
+}
+
+.banner-content h2 {
+    color: #0B0223;
+    font-size: 48px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.banner-button button {
+    border: none;
+    color: #fff;
+    border-radius: 45px;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner-img {
+    width: 50%;
+}
+
+.banner-img img {
+    width: 100%;
+   display: block;
+}
+
+
+/* gamer section styles */
+
+.gamer-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 55px 40px;
+}
