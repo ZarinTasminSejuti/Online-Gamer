@@ -46,6 +46,8 @@ header {
 .logo-img-container h1 {
     font-size: 55px;
     font-weight: 700;
+    color: #6e33f7;
+    cursor: pointer;
 }
 
 
@@ -65,7 +67,7 @@ header {
 
 .menu-container li a {
     text-decoration: none;
-    color: #3C354F;
+    color: #6e33f7;
     font-size: 20px;
     font-weight: 500;
 }
@@ -111,7 +113,7 @@ header {
 }
 
 .banner-content h1 {
-    font-size: 90px;
+    font-size: 95px;
     font-weight: 800;
     text-transform: uppercase;
     background-image: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
@@ -124,20 +126,23 @@ header {
 
 .banner-content p {
     color: #534C64;
-    line-height: 20px;
     font-weight: 500;
     font-size: 20px;
+    margin-bottom: 25px;
 }
 
 .banner-button button {
     border: none;
     color: #fff;
     border-radius: 45px;
-    padding: 15px 30px;
+    padding: 20px 38px;
     font-size: 20px;
     font-weight: 600;
 }
 
+.btn-sign-in{
+    margin-right: 24px;
+}
 .banner-img {
     width: 50%;
 }
@@ -151,7 +156,9 @@ header {
 
 
 /* gamer section styles */
-
+.gamer-content{
+    text-align: right;
+}
 .gamer-container {
     max-width: 1440px;
     margin: 0 auto;
@@ -159,23 +166,32 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 55px 40px;
+    padding: 55px 25px 55px 0px;
 }
 
 .gamer-content p {
     font-size: 18px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 40px;
     color: #534C64;
     margin: 25px 0px 30px;
 }
+
+.unleash{
+    color: #534C64;
+font-size: 32px;
+font-weight: 700;
+}
+
+
+
 
 
 
 /* funny video section styles */
 .funny-videos-section {
     max-width: 1440px;
-    margin: 0 auto;
+    margin: 120px auto 0px;
 }
 
 .funny-videos-section h2, .funny-videos-section p {
@@ -193,6 +209,7 @@ header {
     font-weight: 400;
     margin: 25px 0px 50px;
     color: #534C64;
+    line-height: 30px;
 }
 
 .videos-container {
@@ -215,12 +232,7 @@ header {
 }
 
 
-/* git config --global user.name "Your Name"
-    git config --global user.email you@example.com
 
-After doing this, you may fix the identity used for this commit with:
-
-    git commit --amend --reset-author */
 
 /* online games section styles */
 .online-games-container {
@@ -267,23 +279,112 @@ After doing this, you may fix the identity used for this commit with:
 
 
 
+/* category section styles */
+.category-container{
+    max-width: 1440px;
+    margin: 120px auto;
+    padding: 120px 50px;
+    background-color: aqua;
+}
 
+.category-content{
+display: flex;
+align-items: center;
+justify-content: space-between;
+flex-wrap: wrap;
+row-gap: 25px;
+}
+
+.category{
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    background-color: #F948B2;
+    width: 300px;
+    padding: 10px;
+}
+
+/* .category:hover{
+    color: #8758F1;
+    border: #8758F1;
+} */
+
+.category-content p{
+    color: #0B0223;
+    font-size: 20px;
+    font-weight: 600;
+}
 
 /* footer section styles */
 footer {
-    background-color: #0B0223;
-    text-align: center;
+    background-color: #8758F1;
+    padding: 120px 0px;
+}
+
+.logo-container {
+    color: white;
+    font-size: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 footer ul {
+    margin: 55px auto;
     list-style: none;
-    color: black;
     display: flex;
+    justify-content: space-evenly;
+    width: 50%;
 }
 
 footer li a {
     text-decoration: none;
     color: #fff;
-    font-size: 18px;
+    font-size: 22px;
     font-weight: 600;
+}
+
+.footer-icon{
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 25%;
+    margin: 65px auto 75px;
+    cursor: pointer;
+}
+
+h1:hover {
+    color: #F948B2;
+}
+
+
+.settings-tags{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;
+    margin: 0px auto 35px;
+    
+}
+
+.settings-tags a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+footer a:hover{
+    color: #F948B2 !important;
+}
+
+
+footer p{
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
 }
