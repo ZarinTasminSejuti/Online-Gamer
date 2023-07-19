@@ -9,6 +9,10 @@
     font-family: 'Work Sans', sans-serif;
 }
 
+body{
+    background-color: rgba(255, 66, 165, 0.03);
+}
+
 .gradient-heading {
     font-size: 50px;
     font-weight: 700;
@@ -28,7 +32,10 @@ header {
     display: flex;
     align-items: center;
     max-width: 1440px;
-    margin: 45px auto;
+    margin: 45px auto 0px;
+    padding: 40px 20px;
+    border-radius: 5px;
+    background-color: rgba(255, 66, 165, 0.03);
 }
 
 
@@ -89,10 +96,11 @@ header {
 }
 
 
+
+
 /* banner section styles */
 .banner-container {
     max-width: 1440px;
-    /* min-height: 100px; */
     background-color: #fff;
     display: flex;
     justify-content: space-between;
@@ -106,7 +114,7 @@ header {
 }
 
 .banner-content h2 {
-    color: #0B0223;
+    color: #F948B2;
     font-size: 48px;
     font-weight: 600;
     text-transform: uppercase;
@@ -166,7 +174,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 55px 25px 55px 0px;
+    padding: 55px 20px 55px 0px;
 }
 
 .gamer-content p {
@@ -178,7 +186,7 @@ header {
 }
 
 .unleash{
-    color: #534C64;
+    color: #F948B2;
 font-size: 32px;
 font-weight: 700;
 }
@@ -199,7 +207,7 @@ font-weight: 700;
 }
 
 .funny-videos-section h2 {
-    color: #0B0223;
+    color: #F948B2;
     font-size: 48px;
     font-weight: 700;
 }
@@ -220,15 +228,44 @@ font-weight: 700;
 .videos-content {
     border-radius: 15px;
     width: 310px;
-    background-color: #fff;
+    position: relative;
+    overflow: hidden;
 }
 
 .videos-content img {
     width: 100%;
+    height: auto;
 }
 
 .videos-content p {
     text-align: left;
+}
+
+.image-cover{
+    background-color: rgba(115, 72, 131, 0.5);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom: 100%;
+    transition: 0.2s;
+    font-size: 20px;
+}
+
+.image-cover p{
+    margin-left: 30%;
+color: #fff;
+font-size: 20px;
+font-weight: 600;
+}
+
+.image-cover i{
+    margin-top: 50%;
+    margin-left: 40%;
+    font-size: 48px;
+}
+
+.videos-content:hover .image-cover{
+    bottom:0;
 }
 
 
@@ -239,12 +276,12 @@ font-weight: 700;
     max-width: 1440px;
     margin: 120px auto 80px;
     display: flex;
-    justify-content: space-between;
+ 
 }
 
 .online-games-content {
     width: 50%;
-    padding: 150px;
+    padding: 180px;
     text-align: right;
 }
 
@@ -260,6 +297,7 @@ font-weight: 700;
 
 .online-games-content h2{
     font-size: 48px;
+    color: #F948B2;
     font-weight: 700;
     line-height: 60px;
 }
@@ -283,14 +321,13 @@ font-weight: 700;
 .category-container{
     max-width: 1440px;
     margin: 120px auto;
-    padding: 120px 50px;
-    background-color: aqua;
+    padding: 120px 0px;
 }
 
 .category-content{
 display: flex;
 align-items: center;
-justify-content: space-between;
+justify-content: space-evenly;
 flex-wrap: wrap;
 row-gap: 25px;
 }
@@ -299,21 +336,29 @@ row-gap: 25px;
     display: flex;
     align-items: center;
     border-radius: 50px;
-    background-color: #F948B2;
-    width: 300px;
+    background-color: #fff;
+    width: 288px;
     padding: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.15);
 }
 
-/* .category:hover{
-    color: #8758F1;
-    border: #8758F1;
-} */
+.category:hover{
+    border: 2px solid #F948B2;
+}
+
+.category:hover p{
+    color: #F948B2;
+}
 
 .category-content p{
     color: #0B0223;
     font-size: 20px;
     font-weight: 600;
 }
+
+
+
+
 
 /* footer section styles */
 footer {
@@ -335,14 +380,14 @@ footer ul {
     margin: 55px auto;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 50%;
 }
 
 footer li a {
     text-decoration: none;
     color: #fff;
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
 }
 
@@ -365,7 +410,7 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 40%;
+    width: 35%;
     margin: 0px auto 35px;
     
 }
@@ -374,14 +419,13 @@ h1:hover {
     color: #fff;
     text-decoration: none;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 16px;
     cursor: pointer;
 }
 
 footer a:hover{
     color: #F948B2 !important;
 }
-
 
 footer p{
     color: #fff;
