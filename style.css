@@ -32,7 +32,7 @@ header {
     display: flex;
     align-items: center;
     max-width: 1440px;
-    margin: 45px auto 0px;
+    margin: 0px auto;
     padding: 40px 20px;
     border-radius: 5px;
     background-color: rgba(255, 66, 165, 0.03);
@@ -102,6 +102,9 @@ header {
 .banner-container {
     max-width: 1440px;
     background-color: #fff;
+    background-image: url("./images/Group 14.png");
+    background-repeat: no-repeat;
+    background-size: 50% 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -215,7 +218,7 @@ header {
     font-weight: 700;
 }
 
-.funny-videos-section p {
+.funny-videos-section > p {
     font-size: 18px;
     font-weight: 400;
     margin: 20px 0px 50px;
@@ -228,23 +231,24 @@ header {
     justify-content: space-between;
 }
 
+
 .videos-content {
     border-radius: 15px;
     max-width: 340px;
-    overflow: hidden;
-    position: relative;
-}
+   position: relative;
+   overflow: hidden;
+} 
 
-.videos-content p {
+.videos-content p{
     text-align: left;
+    margin-top: 10px;
+  
 }
 
 .videos-content img {
     width: 100%;
     height: auto;
-}
-
-
+} 
 
 .videos-content:hover .image-cover {
     top: 0;
@@ -255,7 +259,7 @@ header {
     position: absolute;
     top: -100%;
     width: 100%;
-    height: 100%;
+    height: 90%;
     color: #fff;
     transition: all 0.2s;
     background-color: rgba(0, 0, 0, 0.7);
@@ -264,18 +268,20 @@ header {
 }
 
 .image-cover i{
-    font-size: 50px;
+    font-size: 60px;
     color: white;
-    text-align: center;
-
+margin: 40% 40%;
 }
 
 .image-cover p {
     margin-left: 30%;
+    margin-bottom: 30%;
     color: #F948B2;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: 600;
 }
+
+
 
 
 
@@ -330,20 +336,25 @@ header {
 /* careers section styles */
 .careers-section {
     background-color: #F948B2;
+
 }
 
 .careers-container {
     color: #fff;
     max-width: 1440px;
+    background-image: url("./images/Group 65.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 50% 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin: 150px auto 0;
+    margin: 120px auto 0;
 }
 
 .career-content {
     width: 50%;
-    padding: 140px 0;
+    padding: 100px 20px;
 }
 
 .career-content h2 {
@@ -378,8 +389,6 @@ header {
     text-transform: uppercase;
 }
 
-
-
 .career-paragraph {
     margin: 40px 0px;
     display: flex;
@@ -388,7 +397,6 @@ header {
     font-size: 20px;
     font-weight: 600;
 }
-
 
 /* category section styles */
 .category-container {
@@ -481,6 +489,10 @@ footer li a {
     width: 25%;
     margin: 65px auto 75px;
     cursor: pointer;
+
+}
+.footer-icon i{
+    color: #fff;
 }
 
 h1:hover {
@@ -505,16 +517,23 @@ h1:hover {
     cursor: pointer;
 }
 
-footer a:hover {
-    color: #F948B2 !important;
+footer ul li a:hover{
+    color: #F948B2;
 }
+
+.footer-icon a:hover{
+    color: #F948B2;
+}
+
+
+
+
 
 footer p {
     color: #fff;
     font-size: 16px;
     text-align: center;
 }
-
 
 
 
