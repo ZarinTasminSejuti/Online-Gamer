@@ -524,9 +524,9 @@ footer ul li a:hover{
 .footer-icon i:hover{
     color: #F948B2;
 }
-
-
-
+.settings-tags a:hover{
+    color: #F948B2;
+}
 
 
 footer p {
@@ -541,8 +541,6 @@ footer p {
 /* responsive style for small device */
 
 @media screen and (max-width:425px) {
-
-
 
     .nav-container,
     .menu-container ul,
@@ -615,7 +613,6 @@ footer p {
 .funny-videos-section{
 margin: 70px auto;
 padding: 10px;
-/* text-align: center; */
 }
 
 .funny-videos-section h2{
@@ -654,6 +651,7 @@ width: 100%;
 
     .videos-content p {
         text-align: center;
+        margin-bottom: 25px;
     }
 
 .online-games-content{
