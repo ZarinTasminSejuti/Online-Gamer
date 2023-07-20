@@ -369,13 +369,9 @@ header {
     line-height: 35px;
 }
 
-.career-img {
-    width: 50%;
-}
 
 .career-img img {
-    width: 100%;
-    display: block;
+    display: none;
 }
 
 .career-btn button {
@@ -536,6 +532,8 @@ footer p {
     font-size: 16px;
     text-align: center;
 }
+
+
 
 
 
@@ -731,7 +729,7 @@ footer p {
 
     .category-container {
         width: 100%;
-        margin: 50px auto;
+        margin: 45px auto;
         padding: 10px;
     }
 
@@ -764,7 +762,11 @@ footer p {
     }
 
     footer {
-        padding: 20px;
+        padding: 15px;
+    }
+
+    footer p {
+        font-size: 11px;
     }
 
     footer ul {
@@ -777,18 +779,28 @@ footer p {
     }
 
     footer li a {
-        font-size: 18px;
+        font-size: 15px;
 
     }
 
     .footer-icon {
         width: 100%;
-        margin: 30px auto;
+        margin: 70px auto;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        font-size: 35px;
+        row-gap: 40px;
+        justify-items: center;
+
     }
 
     .settings-tags {
         text-align: center;
         width: 100%;
+    }
+
+    .settings-tags a {
+        font-size: 10px;
     }
 }
 
@@ -800,7 +812,7 @@ footer p {
 
 /* responsive style for medium device */
 
-@media screen and (min-width:425px) and (max-width:768px) {
+@media screen and (min-width:426px) and (max-width:768px) {
 
     .nav-container,
     .online-games-container,
@@ -907,6 +919,10 @@ footer p {
         right: 250px;
     }
 
+    .careers-container {
+        background-image: none;
+    }
+
     .career-content {
         width: 100%;
         padding: 30px 20px;
@@ -930,6 +946,7 @@ footer p {
         font-size: 18px;
     }
 
+
     .category-container {
         padding: 100px 0px;
     }
@@ -940,9 +957,10 @@ footer p {
         gap: 30px 5px;
     }
 
-    .category{
+    .category {
         padding: 5px;
     }
+
     .category img {
         margin-right: 5px;
     }
@@ -951,27 +969,32 @@ footer p {
         font-size: 14px;
     }
 
-    footer{
+    footer {
         padding: 50px 0px;
     }
 
-    .logo-container{
+    .logo-container {
         font-size: 30px;
     }
 
-    footer ul{
+    footer ul {
         width: 100%;
         margin: 35px auto;
     }
 
-    .footer-icon{
+    .footer-icon {
         width: 50%;
-        margin: 45px auto;
+        margin: 75px auto;
     }
 
-    .settings-tags{
+    .settings-tags {
         width: 80%;
         margin: 0px auto 35px;
+    }
+
+    .career-img img {
+        width: 100%;
+        display: block;
     }
 
 }
