@@ -146,13 +146,40 @@ header {
     border: none;
     color: #fff;
     border-radius: 45px;
-    padding: 20px 38px;
+    padding: 18px 40px;
     font-size: 20px;
     font-weight: 600;
+    border: 2px solid transparent;
 }
 
 .btn-sign-in {
-    margin-right: 24px;
+    margin-right: 15px;
+    background-color: #FF42A5;
+}
+
+.btn-sign-in:hover {
+    background-color: white;
+    color: #6e33f7;
+    border: 2px solid #F948B2;
+  }
+
+.btn-go{
+    background-color: #6e33f7;
+}
+.btn-go:hover{
+    background-color: white;
+    color: #F948B2;
+    border: 2px solid #6e33f7;
+}
+
+.btn-know{
+    background-color: #F948B2;
+}
+
+.btn-know:hover{
+    background-color: white;
+    color: #6e33f7;
+    border: 2px solid #F948B2;
 }
 
 .banner-img {
@@ -241,7 +268,8 @@ header {
 
 .videos-content p {
     text-align: left;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 5px;
 
 }
 
@@ -255,33 +283,50 @@ header {
 
 }
 
+.image-videos {
+    position: relative;
+}
+
+.image-videos img {
+    display: block;
+    width: 100%;
+}
+
 .image-cover {
     position: absolute;
-    top: -100%;
+    top: 0;
+    left: 0;
     width: 100%;
-    height: 90%;
-    color: #fff;
-    transition: all 0.2s;
-    background-color: rgba(0, 0, 0, 0.7);
-    border: 5px solid #6e33f7;
-
-}
-
-.image-cover i {
-    font-size: 60px;
-    color: white;
-    margin: 40% 40%;
-}
-
-.image-cover p {
-    margin-left: 30%;
-    margin-bottom: 30%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
     color: #F948B2;
+    border: 5px solid #6e33f7;
+    border-radius: 14px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+
+.image-cover:hover {
+    opacity: 1;
+
+}
+
+.image{
+    text-align: center;
+}
+.image > i {
+    font-size: 60px;
+}
+
+.image-paragraph {
     font-size: 25px;
+    margin-top: 15px;
     font-weight: 600;
 }
-
-
 
 
 
@@ -374,7 +419,7 @@ header {
     display: none;
 }
 
-.career-btn button {
+.btn-career {
     border: none;
     color: #F948B2;
     background-color: #fff;
@@ -383,6 +428,11 @@ header {
     font-size: 20px;
     font-weight: 600;
     text-transform: uppercase;
+}
+
+.btn-career:hover{
+color: #fff;
+background-color: #6e33f7;
 }
 
 .career-paragraph {
@@ -568,6 +618,10 @@ footer p {
 
     }
 
+    .btn-sign-in{
+        margin-right: 20px;
+    }
+
     .gamer-container {
         padding: 20px;
     }
@@ -595,13 +649,13 @@ footer p {
 
     .banner-content p {
         text-align: left;
-        margin-left: 20px;
+        margin-left: 25px;
         font-size: 15px;
     }
 
 
     .banner-button button {
-        padding: 10px 20px;
+        padding: 10px 25px;
         font-size: 15px;
     }
 
@@ -702,9 +756,10 @@ footer p {
     }
 
 
-    .careers-container{
+    .careers-container {
         background-image: none;
     }
+
     .career-content {
         width: 100%;
         padding: 20px;
@@ -725,11 +780,11 @@ footer p {
         text-align: center;
     }
 
-     .career-img img {
+    .career-img img {
         width: 100%;
         display: block;
     }
-    
+
 
     .category-container {
         width: 100%;
@@ -880,9 +935,10 @@ footer p {
         padding: 25px 0px 0px;
     }
 
-    .gamer-img img{
+    .gamer-img img {
         width: 100%;
     }
+
     .funny-videos-section {
         margin: 85px auto 0px;
     }
