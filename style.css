@@ -146,14 +146,14 @@ header {
     border: none;
     color: #fff;
     border-radius: 45px;
-    padding: 18px 40px;
+    padding: 15px 34px;
     font-size: 20px;
     font-weight: 600;
     border: 2px solid transparent;
 }
 
 .btn-sign-in {
-    margin-right: 15px;
+    margin-right: 24px;
     background-color: #FF42A5;
 }
 
@@ -919,7 +919,7 @@ footer p {
     }
 
     .banner-button button {
-        padding: 10px 25px;
+        padding: 10px 22px;
         font-size: 18px;
     }
 
