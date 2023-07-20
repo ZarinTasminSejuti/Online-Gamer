@@ -504,7 +504,7 @@ h1:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    width: 35%;
+    width: 30%;
     margin: 0px auto 35px;
 
 }
@@ -783,4 +783,39 @@ footer li a {
     text-align: center;
     width: 100%;
 }
+}
+
+
+
+
+
+
+
+/* responsive style for medium device */
+
+@media screen and (min-width:425px) and (max-width:768px) {
+
+    .nav-container,
+    .online-games-container,
+    .gamer-container{
+        flex-direction: column;
+    }
+    .online-games-img-container {
+        width: 100%;
+    }
+
+    .online-games-content{
+        padding: 0px;
+        width: 100%;
+    }
+
+    .online-games-content h2{
+        text-align: center;
+    }
+    .online-games-content p{
+        text-align: center;
+        width: 0px;
+    }
+    
+    
 }
